@@ -17,7 +17,8 @@
 .widget{
   z-index: 0;
   &:extend(.z-depth-main);
-  background: @theme_cardbg;
+  // background: @theme_cardbg;
+  backdrop-filter: saturate(180%) blur(20px);
   margin-top: @gap;
   font-family: @fontfamily_base;
   font-size: @fontsize_base;
@@ -43,6 +44,7 @@
     justify-content: space-between;
     border-top-left-radius: @border_radius;
     border-top-right-radius: @border_radius;
+    // backdrop-filter: saturate(180%) blur(20px);
     background-color: @color_bg_navbar;
     color: @color_text_in_header;
     font-weight: bold;
@@ -58,7 +60,8 @@
       }
     }
     &.pure{
-      background-color: @theme_cardbg;
+      // background-color: @theme_cardbg;
+      backdrop-filter: saturate(180%) blur(20px);
       color: @theme_main;
       padding-top: 14px; // 适合白色导航栏背景
       padding-bottom: 14px; // 适合白色导航栏背景

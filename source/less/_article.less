@@ -254,14 +254,16 @@
     color: @color_text_main;
   }
   code {
+    color: #b5b5b5;
     font-family: @fontfamily_code;
     padding: 3px 3px 0px 3px;
     margin: 0px 2px;
-    vertical-align: center;
+    vertical-align: middle;
     border-radius: 2px;
     border: 1px solid fade(@color_bg_code, 50%);
     font-size: @fontsize_base * .8;
-    background: @color_bg_code;
+    // background: @color_bg_code;
+    background: #3e454a;
     @media(max-width: @on_phone){
       font-size: @fontsize_base * .8 * .95;
     }
@@ -278,13 +280,13 @@
       vertical-align: middle;
       line-height: 2rem;
       font-weight: bold;
-      background-color: @theme_main;
+      background-color: fade(#3e454a, 60%);
       padding: .2em 2.4em;
       color: @color_text_in_header;
       border-radius: @border_radius/2;
       .enable-trans();
       &:hover {
-        background: darken(@theme_main, 10%);
+        background: #3e454a;
       }
       &:active {
         // background: darken(@theme_main, 20%);
@@ -578,7 +580,7 @@
 pre{
   // 行
   .line{
-    color: fade(@color_text_main, 90%);
+    color: fade(#3e464a, 90%);
   }
   .marked{
     background-color: fade(@color_mac_minimize, 20%);

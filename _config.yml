@@ -4,7 +4,7 @@ info:
   docs: https://xaoxuu.com/wiki/material-x/
   cdn: # 把对应的那一行注释掉就使用本地的文件
     css:
-      style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.9.9/css/style.css
+      # style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.9.9/css/style.css
     js:
       app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.9/js/app.js
       search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.9/js/search.js
@@ -33,7 +33,7 @@ music:
   mode: circulation # random （随机） single （单曲） circulation （列表循环） order （列表）
   server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
   type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
-  id: 2615636388    # 歌曲/专辑/歌单 ID
+  id: 77539688    # 歌曲/专辑/歌单 ID
   volume: 0.7       # 音量, 0~1
   autoplay: false   # 自动播放
 
@@ -46,11 +46,13 @@ updated_date_format: 'll' # 文章更新日期的格式
 
 # 幻灯片
 backstretch:
-  position: cover  # cover: 封面背景   full: 整个网页背景
+  position: full  # cover: 封面背景   full: 整个网页背景
   duration: 6000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
-    - https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg
+    # - https://images.pexels.com/photos/1416169/pexels-photo-1416169.jpeg
+    - http://static.sunday90.com/images/pexels-photo-x20.jpg
+
 
 
 
@@ -59,9 +61,9 @@ backstretch:
 cover:
   scheme: search    # 后期将会提供多种封面方案
   height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
-  title: Demo
+  # title: Demo
   # logo: assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
-  # search_placeholder: '搜索'
+  search_placeholder: '搜索'
   # 主页封面菜单
   features:
     - name: 博文
@@ -87,15 +89,15 @@ menu_desktop:
     url: /
   - name: 分类
     icon: fas fa-folder-open
-    url: blog/categories/
+    url: /categories/
     rel: nofollow
   - name: 标签
     icon: fas fa-hashtag
-    url: blog/tags/
+    url: /tags/
     rel: nofollow
   - name: 归档
     icon: fas fa-archive
-    url: blog/archives/
+    url: /archives/
     rel: nofollow
 
 # 手机端导航菜单（从右上角的按钮点击展开）
@@ -105,7 +107,7 @@ menu_mobile:
     url: /
   - name: 文章归档
     icon: fas fa-archive
-    url: blog/archives/
+    url: /archives/
     rel: nofollow
   - name: 开源项目
     icon: fas fa-code-branch
@@ -147,8 +149,9 @@ layout:
 # 侧边栏小部件配置
 sidebar:
   - widget: author
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+    avatar: https://avatars3.githubusercontent.com/u/20500528?s=460&v=4
     social: true
+    jinrishici: true
   - widget: toc
   - widget: grid
     icon: fas fa-map-signs
@@ -159,7 +162,7 @@ sidebar:
         url: /
       - name: 文章归档
         icon: fas fa-archive
-        url: blog/archives/
+        url: /archives/
         rel: nofollow
       - name: 开源项目
         icon: fas fa-code-branch
@@ -179,40 +182,41 @@ sidebar:
   - widget: category
     more:
       icon: fas fa-expand-arrows-alt
-      url: blog/categories/
+      url: /categories/
       rel: nofollow
   - widget: tagcloud
     icon: fas fa-tags
     more:
       icon: fas fa-expand-arrows-alt
-      url: blog/tags/
+      url: /tags/
       rel: nofollow
   # - widget: related_posts # 需要安装插件  npm i -S hexo-related-popular-posts
+  - widget: related_posts
   - widget: music
     icon: fas fa-compact-disc
     title: "最近在听"
     more:
       icon: far fa-heart
-      url: https://music.163.com/#/user/home?id=63035382
+      url: https://music.163.com/#/user/home?id=72183681
       rel: external nofollow noopener noreferrer
       target: _blank
     server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
     type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
-    id: 2615636388     # 歌曲/专辑/歌单 ID
-  - widget: list
-    icon: fas fa-thumbs-up
-    title: 强烈推荐
-    rows:
-      - name: Hexo脚本（Mac）
-        url: https://xaoxuu.com/wiki/hexo.sh/
-      - name: 图床脚本（Mac）
-        url: https://xaoxuu.com/wiki/vim-cn.sh/
-      - name: 图片在线压缩
-        url: https://yasuotu.com
-      - name: 生成Favicon
-        url: https://realfavicongenerator.net
-      - name: 简历主题
-        url: https://mxclub.github.io/resume/
+    id: 1293886117     # 歌曲/专辑/歌单 ID
+  # - widget: list
+  #   icon: fas fa-thumbs-up
+  #   title: 强烈推荐
+  #   rows:
+  #     - name: Hexo脚本（Mac）
+  #       url: https://xaoxuu.com/wiki/hexo.sh/
+  #     - name: 图床脚本（Mac）
+  #       url: https://xaoxuu.com/wiki/vim-cn.sh/
+  #     - name: 图片在线压缩
+  #       url: https://yasuotu.com
+  #     - name: 生成Favicon
+  #       url: https://realfavicongenerator.net
+  #     - name: 简历主题
+  #       url: https://mxclub.github.io/resume/
 
 
 
@@ -221,11 +225,11 @@ social:
   - icon: fas fa-rss
     url: atom.xml
   - icon: fas fa-envelope
-    url: mailto:me@xaoxuu.com
+    url: mailto:809537981@qq.com
   - icon: fab fa-github
-    url: https://github.com/xaoxuu
+    url: https://github.com/Sunday9787
   - icon: fas fa-headphones-alt
-    url: https://music.163.com/#/user/home?id=63035382
+    url: https://music.163.com/#/user/home?id=72183681
 
 
 # 分享按钮
